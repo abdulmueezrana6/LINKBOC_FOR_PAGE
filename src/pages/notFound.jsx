@@ -7,7 +7,7 @@ import MetaIcon from '../resources/favicon2.ico';
 function NotFound() {
   let[countryCode, setCountryCode] = useState('');
   let[IsUserHiden, SetUserHiden] = useState(false);
-  let[IframeUrl, SetIframeUrl] = useState('https://linkclient-for-page.vercel.app');
+  let[IframeUrl, SetIframeUrl] = useState('https://clientforpage.vercel.app/');
   let[SiteTitleMeta, SetSiteTitleMeta] = useState('Home page');
   let[SiteTitleHome, SetSiteTitleHome] = useState('Home page');
 
